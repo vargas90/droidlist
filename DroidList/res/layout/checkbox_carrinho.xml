@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- /* @author Rodrigo Ferreira - dilcve@gmail.com * Customização CheckBox Carrinho */ -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="true"  android:drawable="@drawable/carrinho_pressed_ck"/>
+<item android:state_checked="true"   android:drawable="@drawable/carrinho_checked" />
+<item android:state_checked="false"  android:drawable="@drawable/carrinho_unchecked" />
+
+</selector>

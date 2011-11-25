@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="285px"
+              android:layout_height="fill_parent"
+              android:gravity="center">"
+<Spinner
+    android:id="@+esc_produto/splista"
+    android:layout_width="285px"
+    android:layout_height="wrap_content"
+    android:drawSelectorOnTop="true"
+    android:prompt="@string/texto_categoria"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="285px"
+              android:layout_height="fill_parent"
+              android:layout_weight="1">"
+    <ListView
+        android:layout_width="285px"
+        android:layout_height="wrap_content"
+        android:id="@+esc_produto/lstproduto"
+        android:layout_weight="1"/>
+</LinearLayout>
+    <Button
+        android:layout_width="290px"
+        android:layout_height="wrap_content"
+        android:id="@+esc_produto/btproduto"
+        android:text="@string/label.adicionar"/>
+</LinearLayout>

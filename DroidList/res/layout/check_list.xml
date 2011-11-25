@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350px"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/bcheck"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:button="@layout/checkbox_carrinho"
+        android:textSize="10sp"/>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right">
+        <TextView
+            android:id="@+id/txcheck"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="#FF00BBFF"
+            />
+        <TextView
+            android:id="@+id/txqtde"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="#FF00BBFF"
+            />
+    </LinearLayout>
+</LinearLayout>

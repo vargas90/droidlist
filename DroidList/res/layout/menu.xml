@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_addprod"
+          android:icon="@drawable/add_prod"
+          android:title="@string/menu_1" />
+    <item android:id="@+id/menu_addcateg"
+          android:icon="@drawable/categoria"
+          android:title="@string/menu_2" />
+    <item android:id="@+id/menu_addlista"
+          android:icon="@drawable/lista"
+          android:title="@string/menu_3" />
+    <item android:id="@+id/menu_addprodlista"
+          android:icon="@drawable/escolha"
+          android:title="@string/menu_4" />
+    <item android:id="@+id/menu_sub"
+          android:icon="@drawable/mais"
+          android:title="@string/menu_sub" >
+        <!-- "file" submenu -->
+        <menu>
+            <item android:id="@+id/menu_sub_apagaLista"
+                  android:title="@string/menu_sub_1" />
+            <item android:id="@+id/menu_sub_apagaCatgoria"
+                  android:title="@string/menu_sub_2" />
+            <item android:id="@+id/menu_sub_resetaBanco"
+                  android:title="@string/menu_sub_3" />
+            <item android:id="@+id/menu_sub_tamanhoLetra"
+                  android:title="@string/menu_sub_4" />
+            <item android:id="@+id/menu_sub_email"
+                  android:title="@string/menu_sub_5" />
+            <item android:id="@+id/menu_sub_sobre"
+                  android:title="@string/menu_sub_6" />
+        </menu>
+    </item>
+</menu>
