@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
     <!--Menus-->
-    <string name="app_name">Romaneio Eletrônico</string>
+    <string name="app_name">DroidList</string>
     <string name="menu_1">Add Produto</string>
     <string name="menu_2">Add Categoria</string>
     <string name="menu_3">Nova Lista</string>
@@ -51,6 +51,8 @@
     <string name="label.quantidade">Quantidade </string>
     <string name="label.qtde">Qtde </string>
     <string name="label.modeda">R$ </string>
+    <string name="label.nova">Nova</string>
+    <string name="label.minhalista">MINHA LISTA</string>
     <!--Hints-->
     <string name="hint.categoria">Categoria </string>
     <string name="hint.nomeLista">Nome da Lista </string>
