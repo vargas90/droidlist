@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="200px"
+              android:layout_height="115px"
+              android:gravity="center">"
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label.lista"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="50px">"
+    <EditText
+            android:id="@+addlista/edlista"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint.nomeLista"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="50px"
+                  android:gravity="center"
+                  android:background="#999999">"
+    <Button
+            android:id="@+addlista/btcadlista"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="@string/label.cadastrar"/>
+    <Button
+            android:id="@+addlista/btcancelar"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:text="@string/label.cancelar"/>
+    </LinearLayout>
+</LinearLayout>
