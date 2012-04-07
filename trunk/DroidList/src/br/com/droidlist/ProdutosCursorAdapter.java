@@ -36,8 +36,7 @@ public class ProdutosCursorAdapter extends SimpleCursorAdapter {
     @Override
     public View getView(final int pos, View inView, ViewGroup parent) {
         View v = inView;
-        @SuppressWarnings("unused")
-		Object i = getItem(pos);
+        Object i = getItem(pos);
         if (v == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             v = inflater.inflate(R.layout.esc_produto_check, null);
@@ -55,6 +54,7 @@ public class ProdutosCursorAdapter extends SimpleCursorAdapter {
 
         cBox.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
+            @SuppressWarnings("element-type-mismatch")
             public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
                 if (arg1) {
                     //cBox.setButtonDrawable(R.drawable.carrinho_checked);
