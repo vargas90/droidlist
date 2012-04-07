@@ -6,8 +6,8 @@
      <TextView
         android:id="@+produto/txtcategoria"
         android:layout_width="fill_parent"
-        android:layout_height="25px"
-        android:text="Categorias"
+        android:layout_height="wrap_content"
+        android:text="@string/label.categorias"
         android:background="#ffffff"
         android:textSize="20sp"
         android:gravity="center"

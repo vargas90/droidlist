@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
-              android:layout_width="200px"
-              android:layout_height="115px"
+              android:layout_width="200dp"
+              android:layout_height="115dp"
               android:gravity="center">"
      <TextView
             android:layout_width="wrap_content"
@@ -11,28 +11,30 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                   android:orientation="horizontal"
                   android:layout_width="fill_parent"
-                  android:layout_height="50px"
+                  android:layout_height="50dp"
                   android:gravity="center">"
     <EditText
             android:id="@+addcateg/edcateg"
-            android:layout_width="200px"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:hint="@string/hint.categoria"/>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                   android:orientation="horizontal"
                   android:layout_width="fill_parent"
-                  android:layout_height="50px"
+                  android:layout_height="50dp"
                   android:gravity="center"
                   android:background="#999999">"
     <Button
             android:id="@+addcateg/btcadcateg"
-            android:layout_width="100px"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/label.cadastrar"/>
     <Button
             android:id="@+addcateg/btcancelar"
-            android:layout_width="100px"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/label.cancelar"/>
     </LinearLayout>

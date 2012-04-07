@@ -8,6 +8,6 @@
         android:id="@+esc_produto_check/bcheck"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:button="@layout/checkbox_carrinho"
+        android:button="@drawable/checkbox_carrinho"
         />
 </LinearLayout>
