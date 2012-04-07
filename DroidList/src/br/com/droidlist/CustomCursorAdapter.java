@@ -4,6 +4,10 @@
  */
 package br.com.droidlist;
 
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
+
 import android.content.Context;
 import android.database.Cursor;
 import android.graphics.Typeface;
@@ -14,9 +18,9 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
+import br.com.droidlist.banco.Banco;
+import br.com.droidlist.categoria.Categoria;
+import br.com.droidlist.produto.Produto;
 
 /**
  *
@@ -38,8 +42,7 @@ public class CustomCursorAdapter extends SimpleCursorAdapter {
     @Override
     public View getView(final int pos, View inView, ViewGroup parent) {
         View v = inView;
-        @SuppressWarnings("unused")
-		Object i = getItem(pos);
+        Object i = getItem(pos);
         if (v == null) {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             v = inflater.inflate(R.layout.check_list, null);
@@ -62,6 +65,7 @@ public class CustomCursorAdapter extends SimpleCursorAdapter {
         }
         if (fonte == null) {
             db.criarConfigs(10);
+            fonte = 10;
             Log.i("###nao existia###", String.valueOf(fonte));
         }
         cBox.setTextSize(fonte);
@@ -98,6 +102,7 @@ public class CustomCursorAdapter extends SimpleCursorAdapter {
 
         cBox.setOnClickListener(new View.OnClickListener() {
 
+            @SuppressWarnings("element-type-mismatch")
             public void onClick(View arg0) {
                 if (cBox.isChecked()) {
                     //cBox.setButtonDrawable(R.drawable.carrinho_checked);
@@ -121,7 +126,7 @@ public class CustomCursorAdapter extends SimpleCursorAdapter {
                 }
                 //Toast.makeText(context, String.valueOf(cBox.isChecked()), Toast.LENGTH_LONG).show();
 
-                main d = (main) context;
+                DroidList d = (DroidList) context;
                 d.run();
                 //d.onCreate(Bundle.EMPTY);
             }
@@ -131,7 +136,7 @@ public class CustomCursorAdapter extends SimpleCursorAdapter {
                 new View.OnLongClickListener() {
 
                     public boolean onLongClick(View arg0) {
-                        main d = (main) context;
+                        DroidList d = (DroidList) context;
                         Produto p = new Produto();
                         p.setId((Integer) cBox.getTag());
                         p.setNome((String) cBox.getText());
@@ -147,7 +152,7 @@ public class CustomCursorAdapter extends SimpleCursorAdapter {
         tBox.setOnLongClickListener(new View.OnLongClickListener() {
 
             public boolean onLongClick(View arg0) {
-                main d = (main) context;
+                DroidList d = (DroidList) context;
                 Categoria c = new Categoria();
                 c.setId((Integer) tBox.getTag());
                 c.setNome((String) tBox.getText());
