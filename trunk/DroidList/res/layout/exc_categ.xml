@@ -1,37 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="200px"
-              android:layout_height="wrap_content"
-              android:gravity="center">"
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/label.categorias"/>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  android:orientation="horizontal"
-                  android:layout_width="fill_parent"
-                  android:layout_height="50px">"
-    <Spinner
-            android:id="@+exccateg/spcateg"
-            android:layout_width="200px"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  android:orientation="horizontal"
-                  android:layout_width="fill_parent"
-                  android:layout_height="wrap_content"
-                  android:gravity="center"
-                  android:background="#999999">"
-    <Button
-            android:id="@+exccateg/btexccateg"
-            android:layout_width="100px"
-            android:layout_height="wrap_content"
-            android:text="@string/label.apagar"/>
-    <Button
-            android:id="@+exccateg/btcancelar"
-            android:layout_width="100px"
-            android:layout_height="wrap_content"
-            android:text="@string/label.cancelar"/>
-    </LinearLayout>
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:orientation="vertical" >
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/label.categorias" />
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+
+		<Spinner
+			android:id="@+exccateg/spcateg"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#999999"
+		android:gravity="center"
+		android:orientation="horizontal" >
+
+		<Button
+			android:id="@+exccateg/btexccateg"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/label.apagar" />
+
+		<Button
+			android:id="@+exccateg/btcancelar"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/label.cancelar" />
+	</LinearLayout>
+
 </LinearLayout>

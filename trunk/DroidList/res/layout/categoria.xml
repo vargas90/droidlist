@@ -5,8 +5,8 @@
     android:layout_height="fill_parent">"
      <TextView
         android:layout_width="fill_parent"
-        android:layout_height="25px"
-        android:text="Categorias"
+        android:layout_height="wrap_content"
+        android:text="@string/label.categoria"
         android:background="#ffffff"
         android:textSize="20sp"
         android:gravity="center"
