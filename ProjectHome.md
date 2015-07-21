@@ -1,0 +1,1 @@
+DroidList é um aplicativo para te ajudar a organizar e gerenciar suas listas de compras. Adicione novos itens que você precisa comprar, defina o preço e separe os itens por categorias! Você pode enviar sua lista por email.
